@@ -1,0 +1,35 @@
+:root {
+  --light: 255, 255, 255;
+  --light-gray: 247, 247, 247;
+}
+
+body {
+  background-color: rgb(var(--light-gray));
+}
+
+a:not(.brand):hover {
+  color: rgb(var(--bs-warning-rgb));
+}
+
+a.brand:hover,
+.nav-item a:hover {
+  color: rgb(var(--light));
+}
+
+.ck-editor__editable {
+  min-height: 260px;
+}
+
+.form-label.required:before {
+  content: '* ';
+  color: rgb(var(--bs-danger-rgb));
+}
+
+main {
+  min-height: calc(100vh - 56px - 40px - 1.5rem - 1.5rem);
+}
+
+.product-image {
+  height: 360px;
+  background-color: rgb(var(--light));
+}
